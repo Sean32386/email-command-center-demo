@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Executive Email Command Center — Live Demo</title>
+<meta name="description" content="Live demo with fictional data: AI email sorting and reply drafting for K-12 district leaders. Rules first, sensitive email never sent to AI, nothing sent without approval.">
+<meta property="og:title" content="Executive Email Command Center — Live Demo">
+<meta property="og:description" content="AI email sorting and reply drafting for K-12 district leaders. Fictional data; nothing is ever sent automatically.">
+<meta property="og:type" content="website">
+<style>
+  :root { color-scheme: dark; --bg: #0a101d; --panel: #111a2d; --line: #1d2943; --ink: #eef2f8; --ink2: #b8c2d6; --muted: #8a97b2; --accent: #3987e5; --good: #47cd89; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.55 Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 1080px; margin: 0 auto; padding: 72px 28px 48px; }
+  .tag { display: inline-block; font-size: 13px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); border: 1px solid #2b3a5c; border-radius: 20px; padding: 4px 12px; }
+  h1 { font-size: clamp(34px, 5vw, 54px); line-height: 1.08; letter-spacing: -.02em; margin: 22px 0 16px; font-weight: 650; }
+  .lede { font-size: 20px; color: var(--ink2); max-width: 760px; margin: 0; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 22px; margin: 44px 0 40px; }
+  a.card { display: flex; flex-direction: column; gap: 10px; text-decoration: none; color: inherit; background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 28px 28px 24px; transition: border-color .2s, transform .2s; }
+  a.card:hover, a.card:focus-visible { border-color: var(--accent); transform: translateY(-2px); outline: none; }
+  .card .who { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+  .card h2 { margin: 0; font-size: 26px; font-weight: 600; }
+  .card p { margin: 0; color: var(--ink2); }
+  .card .go { margin-top: auto; padding-top: 10px; color: #84caff; font-weight: 600; }
+  .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; padding: 26px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .facts b { display: block; font-size: 17px; margin-bottom: 4px; } .facts span { color: var(--muted); font-size: 15px; }
+  .facts b::before { content: "✓"; color: var(--good); margin-right: 8px; }
+  footer { margin-top: 28px; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <span class="tag">Live demo · fictional data</span>
+  <h1>Executive Email Command Center</h1>
+  <p class="lede">AI that sorts a district leader's inbox, drafts replies to the important email in their own voice, and shows the whole office what needs attention. Nothing is sent without a person approving it.</p>
+
+  <div class="cards">
+    <a class="card" href="display/">
+      <span class="who">For superintendents &amp; executives</span>
+      <h2>Office display</h2>
+      <p>The always-on monitor view: what needs you today, drafts ready for review, emails sorted, and the return on AI.</p>
+      <span class="go">Open the display →</span>
+    </a>
+    <a class="card" href="app/">
+      <span class="who">For CIOs &amp; IT teams</span>
+      <h2>Full command center</h2>
+      <p>Priority queue, draft review, delegation, safety controls, AI usage and cost, budgets, and settings.</p>
+      <span class="go">Open the command center →</span>
+    </a>
+  </div>
+
+  <div class="facts">
+    <div><b>Never sends email</b><span>Drafts wait in the user's own inbox for review.</span></div>
+    <div><b>Rules before AI</b><span>Flagged student, personnel, legal and health email is never sent to AI.</span></div>
+    <div><b>Runs in the district's own accounts</b><span>Gmail or Outlook, with the district's own AI keys.</span></div>
+  </div>
+
+  <footer>Every email, name and number in this demo is fictional. Nothing in it connects to a real mailbox or an AI service. New demo emails arrive on their own; reload to start over.</footer>
+</main>
+</body>
+</html>
