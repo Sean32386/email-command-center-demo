@@ -26,6 +26,10 @@
   .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; padding: 26px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
   .facts b { display: block; font-size: 17px; margin-bottom: 4px; } .facts span { color: var(--muted); font-size: 15px; }
   .facts b::before { content: "✓"; color: var(--good); margin-right: 8px; }
+  .themes { margin: -18px 0 36px; color: var(--muted); font-size: 15px; display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; }
+  .themes a { color: var(--ink2); text-decoration: none; border: 1px solid var(--line); border-radius: 20px; padding: 6px 14px 6px 8px; display: inline-flex; align-items: center; gap: 8px; }
+  .themes a:hover { border-color: var(--accent); color: var(--ink); }
+  .themes i { width: 18px; height: 18px; border-radius: 50%; display: inline-block; }
   footer { margin-top: 28px; color: var(--muted); font-size: 14px; }
 </style>
 </head>
@@ -49,6 +53,10 @@
       <span class="go">Open the command center →</span>
     </a>
   </div>
+
+  <p class="themes">Office display in district colors:
+    <a href="display/"><i style="background:#0b1330;box-shadow:inset 0 0 0 3px #f2b134"></i>Navy &amp; gold</a>
+    <a href="mv/"><i style="background:#0c0c0d;box-shadow:inset 0 0 0 3px #f26a21"></i>Orange &amp; black</a></p>
 
   <div class="facts">
     <div><b>Never sends email</b><span>Drafts wait in the user's own inbox for review.</span></div>
